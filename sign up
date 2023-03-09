@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Dukevest</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navContainer">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/Images/Dukevest-logos.jpeg" alt="Dukevest Logo" />
+                </a>
+            </div>
+            <ul class="navLeft">
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">My Plans</a>
+                </li>
+            </ul>
+            <ul class="navRight">
+                <li>
+                    <a href="#">
+                        <img src="./Images/location.gif" alt="locate a branch" />
+                        <span class="adj">Find a Branch</span>
+                    </a>
+                </li>
+                <li>
+                    <button class="btn">Sign In</button>
+                </li>
+                <div class="searchBox">
+                    <input type="text" class="searchText" placeholder="search keywords..." />
+                    <a href="#" class="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass-dollar fa-2x"></i>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <section class="sign-up-page">
+        <div class="su-container">
+            <div class="su-left">
+                <img src="./Images/Dukevest-SUP.png" alt="" />
+            </div>
+            <div class="su-right">
+                <h2>Few details to get you onboard</h2>
+                <form action="#">
+                    <div class="su-details">
+                        <label for="first-name">First Name:</label>
+                        <div class="su-input">
+                            <input id="first-name" type="text" placeholder="John" required />
+                        </div>
+                    </div>
+                    <div class="su-details">
+                        <label for="last-name">Last Name:</label>
+                        <div class="su-input">
+                            <input id="last-name" type="text" placeholder="Doe" required />
+                        </div>
+                    </div>
+                    <div class="su-details">
+                        <label for="email">Email:</label>
+                        <div class="su-input">
+                            <input id="email" type="email" placeholder="example@address.com" required />
+                        </div>
+                    </div>
+                    <div class="su-details">
+                        <label for="phone-number">Phone Number:</label>
+                        <div class="su-input">
+                            <input id="phone-number" type="text" placeholder="+44......" required />
+                        </div>
+                    </div>
+                    <div class="su-details">
+                        <label for="address">Address:</label>
+                        <div class="su-input">
+                            <input id="address" type="text" required />
+                        </div>
+                    </div>
+                    <div class="su-details">
+                        <label for="postcode">Postcode:</label>
+                        <div class="su-input">
+                            <input id="email" type="text" required />
+                        </div>
+                    </div>
+                    <div class="su-details">
+                        <label for="password">New Password:</label>
+                        <div class="su-input">
+                            <input id="password" type="password" required />
+                        </div>
+                    </div>
+                    <!-- / / / / /Radio buttons for Account Type/ / / -->
+                    <div class="su-radio">
+                        <div>
+                            <input id="email" type="radio" name="account-type" required />
+                        </div>
+                        <label for="postcode">Personal Account:</label>
+                    </div>
+                    <div class="su-radio">
+                        <div>
+                            <input id="email" type="radio" name="account-type" required />
+                        </div>
+                        <label for="postcode">Business Account:</label>
+                    </div>
+                    <hr />
+                    <!-- Submit Button for the Sign Up Form -->
+                    <input class="su-btn" type="submit" value="Sign Up" />
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
