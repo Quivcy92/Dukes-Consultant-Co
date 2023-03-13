@@ -1,178 +1,530 @@
-*{ /*---- adds margin, padding and fonts universally ---*/
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+* {
+  /*---- adds margin, padding and fonts universally ---*/
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(images/second\ landing.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/second\ landing.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-nav{
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
 }
-nav img{
-    width: 150px;
+nav img {
+  width: 150px;
 }
-.nav-left { 
-    display: flex;
-    gap: 20px;
-  }
+.nav-left {
+  display: flex;
+  gap: 20px;
+}
 .nav-right {
-    display: flex;
-    gap: 20px;
-  }
+  display: flex;
+  gap: 20px;
+}
 nav.same-line {
-    display: flex;
-    justify-content: space-between;
-  }
-.same-line{
-    flex: 1;
-    text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
-.same-line ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+.same-line {
+  flex: 1;
+  text-align: left;
 }
-.same-line ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
+.same-line ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
 }
-.same-line ul li::after{ /*--- adds a hover effect on the navigation bar ---*/
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #0568a6;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
+.same-line ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
 }
-.same-line ul li:hover::after{
-    width: 100%;
+.same-line ul li::after {
+  /*--- adds a hover effect on the navigation bar ---*/
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #0568a6;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
 }
-.text-box{
-    width: 90%;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+.same-line ul li:hover::after {
+  width: 100%;
 }
-.text-box h1{
-    font-size: 90px;
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-.sign-up-link{ /*--- adds features for the sign up link ---*/
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
+.text-box h1 {
+  font-size: 90px;
 }
-.sign-up-link:hover{
-    border: 1px solid #0568a6;
-    background: #0568a6;
-    transition: 1s;
+.sign-up-link {
+  /*--- adds features for the sign up link ---*/
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.sign-up-link:hover {
+  border: 1px solid #0568a6;
+  background: #0568a6;
+  transition: 1s;
 }
 
 /*----- about us ------*/
 
-.about-us{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
+.about-us {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
 }
-h1{
-    font-size: 42px;
-    font-weight: 600;
+h1 {
+  font-size: 42px;
+  font-weight: 600;
 }
-p{
-    color: black;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    text-align: left;
-}
-.icons .fa{ /*--- adds the features for the footer icons ---*/
-    color: #0568a6;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-    font-size: 30px;
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: left;
 }
 
 /*---- plans ----*/
 
-.plans{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
+.plans {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
 }
-.plans p{
-    text-align: center;
+.plans p {
+  text-align: center;
 }
-.row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
+.row {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.second-row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
+.second-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
 }
-.plans-col{
-    flex-basis: 42%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+.plans-col {
+  flex-basis: 42%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
-.plans-col img{
-    width: 100%;
-    display: block;
+.plans-col img {
+  width: 100%;
+  display: block;
 }
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
 }
-.layer:hover{
-    background: rgb(192, 192, 192, 0.4);
+.layer:hover {
+  background: rgb(192, 192, 192, 0.4);
 }
-.layer h3{
-    width: 100%;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
 }
-.layer:hover h3{
-    bottom: 49%;
-    opacity: 1;
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/*----- footer -----*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.footer p {
+  text-align: center;
+}
+.icons .fa {
+  /*--- adds the features for the footer icons ---*/
+  color: #0568a6;
+  margin: 0px 13px;
+  cursor: pointer;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/*---- text box for sign in page ----*/
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: url(images/second\ landing.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.second-text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.second-text-box h1 {
+  font-size: 55px;
+}
+.users-page {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+.users-page .form {
+  /*---- choose account type login form ----*/
+  position: relative;
+  width: 400px;
+  height: 350px;
+  padding-top: 20px;
+  padding-bottom: auto;
+  margin: 20px auto;
+}
+.form .users-header {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.form .users-header > div {
+  width: calc(100% / 2);
+  font-size: 20px;
+  font-weight: 600;
+}
+.form.signin .users-header div.show-client {
+  color: #0568a6;
+}
+.form.admin .users-header div.show-admin {
+  color: #0568a6;
+}
+.form.rm .users-header div.show-rm {
+  color: #0568a6;
+}
+.form .form-elements {
+  margin-top: 15px;
+}
+.form .form-elements .form-element {
+  height: 60px;
+  opacity: 1;
+  overflow: hidden;
+}
+.form .form-elements input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #0568a6;
+  background: #eee;
+}
+.form .form-elements button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+  border-radius: 10px;
+  background: #0568a6;
+  color: #f5f5f5;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.form .arrow {
+  position: absolute;
+  top: 60px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #0568a6;
+}
+.form.signin .arrow {
+  left: calc(calc(100% / 3) / 2.2);
+}
+.form.admin .arrow {
+  left: calc(calc(100% / 3) + calc(calc(100% / 3) / 2.2));
+}
+.form.rm .arrow {
+  left: calc(calc(calc(100% / 3) * 2.1) + calc(calc(100% / 3) / 3));
+}
+.form p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+.form p a {
+  color: #0568a6;
+}
+
+/*--- contact us ---*/
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div .fa {
+  font-size: 28px;
+  color: #0568a6;
+  margin: 10px;
+  margin-right: 30px;
+}
+.contact-col div p {
+  padding: 0;
+}
+.contact-col div h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+.contact-col .sign-up-link {
+  color: black;
+  border: 1px solid #0568a6;
+}
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+/*---- sign up ----*/
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+.signup-container form {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: #222;
+  background: #fff;
+  text-align: center;
+}
+.signup-container form h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #333;
+}
+.signup-container form input {
+  width: 50%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 8px 0;
+  background: #eee;
+  border-radius: 5px;
+}
+.signup-container form select {
+  width: 52.5%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 9px 0;
+  background: #eee;
+  border-radius: 5px;
+}
+.signup-container form select option {
+  background: #fff;
+}
+.signup-container form .form-btn {
+  background: #aadbfa;
+  color: #0568a6;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+}
+.signup-container form .form-btn:hover {
+  background: #0568a6;
+  color: #fff;
+}
+.signup-container form p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+.signup-container form p a {
+  color: #0568a6;
+}
+
+/*---- client page ----*/
+.user-header {
+  height: 25vh;
+  width: 100%;
+  background-image: url(images/second\ landing.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.profile-row {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+.profile-col {
+  color: black;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 20px;
+  max-width: 700px;
+  min-width: 350px;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0 10px;
+  width: 100%;
+  gap: 10px;
+}
+.nav-bar li {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 12px;
+  text-align: left;
+  color: black !important;
+  width: 100%;
+  padding-left: 5px;
+}
+.nav-bar li a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav-bar li:hover {
+  transition: 0.3s;
+  background: black;
+  color: white !important;
+}
+.img-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+.clientname {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+/*---- banking page -----*/
+.banking {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.banking h1 {
+  font-size: 25px;
+}
+/*---- wealth mgt page -----*/
+.wealth-mgt {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.wealth-mgt h1 {
+  font-size: 25px;
+}
+/*---- business lending page -----*/
+.business-lend {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.business-lend h1 {
+  font-size: 25px;
+}
+/*---- investment page -----*/
+.invest {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.invest h1 {
+  font-size: 25px;
 }
